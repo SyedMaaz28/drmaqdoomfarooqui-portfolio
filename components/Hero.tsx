@@ -86,20 +86,30 @@ export default function Hero() {
       </motion.h1>
 
       {/* Subtitle */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="
-          mt-6
-          text-gray-600
-          text-sm
-          sm:text-base
-          md:text-lg
-          max-w-xl
-        "
-      >
-        Principal • Academic Leader • Quranic Scholar
-      </motion.p>
+<motion.p
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  className="
+    mt-6
+    text-gray-600
+    text-sm
+    sm:text-base
+    md:text-lg
+    max-w-xl
+    flex items-center justify-center flex-wrap
+  "
+>
+  Principal
+
+  <span className="mx-2 text-yellow-400 animate-pulse">✦</span>
+
+  Academic Leader
+
+  <span className="mx-2 text-yellow-400 animate-pulse">✦</span>
+
+  Quranic Scholar
+</motion.p>
+
       
     </section>
   );

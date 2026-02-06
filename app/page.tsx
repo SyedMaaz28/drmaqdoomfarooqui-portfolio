@@ -11,7 +11,6 @@ export default function Home() {
       <Hero />
       <About />
 
-      <section id="about" className="h-screen">About</section>
       <section id="achievements" className="h-screen">Achievements</section>
       <section id="workhistory" className="h-screen">Work</section>
       <section id="research" className="h-screen">Research</section>
