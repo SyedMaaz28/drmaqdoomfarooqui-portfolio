@@ -109,7 +109,6 @@ export default function Research() {
             >
               <ResearchCard
                 paper={paper}
-                onClick={() => {}}
               />
             </motion.div>
           )
