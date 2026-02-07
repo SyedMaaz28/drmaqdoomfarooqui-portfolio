@@ -94,7 +94,7 @@ export default function Hero() {
     text-gray-600
     text-sm
     sm:text-base
-    md:text-lg
+    md:text-base
     max-w-xl
     flex items-center justify-center flex-wrap
   "
@@ -106,7 +106,6 @@ export default function Hero() {
   Academic Leader
 
   <span className="mx-2 text-yellow-400 animate-pulse">✦</span>
-
   Quranic Scholar
 </motion.p>
 

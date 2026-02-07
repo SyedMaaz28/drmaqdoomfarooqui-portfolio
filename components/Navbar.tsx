@@ -180,7 +180,7 @@ export default function Navbar() {
         });
       },
       {
-        threshold: 0.6,    // For Tuning Highlight
+        threshold: 0.3,    // For Tuning Highlight
       }
     );
 
