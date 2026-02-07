@@ -70,7 +70,8 @@ export default function WorkHistory() {
   "
     >
       {/* TITLE */}
-      <h2 className="text-center text-[#1375C1] tracking-widest uppercase mb-20">
+      {/* <h2 className="text-center text-[#1375C1] tracking-widest uppercase mb-20"> */}
+      <h2 className="text-3xl font-bold text-center mb-12 text-[#1375C1]">
         Work History
       </h2>
 

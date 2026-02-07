@@ -35,7 +35,7 @@ export default function QuranSection() {
       id="quranicteachings"
       className="
         relative
-        py-32
+        py-0
         px-6 md:px-16 lg:px-24
         overflow-hidden
         bg-gradient-to-b
@@ -44,6 +44,10 @@ export default function QuranSection() {
         to-white
       "
     >
+      {/* HEADING */}
+      <h2 className="text-3xl font-bold text-center mb-12 text-[#1375C1]">
+        Quranic Teachings
+      </h2>
       {/* BACKGROUND PATTERN */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:22px_22px]" />
 
@@ -115,7 +119,7 @@ export default function QuranSection() {
                 rounded-2xl
                 bg-white/80
                 backdrop-blur-sm
-                border border-neutral-200
+                border border-blue-100 hover:border-[#1375C1]/40
                 shadow-md
                 hover:shadow-xl
                 hover:-translate-y-1
@@ -204,7 +208,7 @@ export default function QuranSection() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h3 className="text-2xl font-semibold mb-4 text-slate-900">
+          <h3 className="text-2xl font-semibold mb-4 text-gray-500">
             Explore Qur’anic Teaching & Spiritual Work
           </h3>
 
@@ -214,10 +218,10 @@ export default function QuranSection() {
               inline-block
               px-8 py-3
               rounded-full
-              bg-blue-600
+              bg-[#1375C1]
               text-white
               font-medium
-              hover:bg-blue-700
+              hover:bg-[#1375C1]
               transition
               shadow-lg
             "

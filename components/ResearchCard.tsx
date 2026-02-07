@@ -59,12 +59,14 @@ export default function ResearchCard({ paper }: Props) {
         md:h-[260px]
 
         bg-white/90
-        shadow-md shadow-black/5
+        shadow-md shadow-lg
+        backdrop-blur-md
 
         p-6 md:p-7
         hover:shadow-xl
         hover:-translate-y-1
         transition-all duration-300
+        border border-blue-100 hover:border-[#1375C1]/40
       "
     >
       {/* ───────── TOP ───────── */}
@@ -126,7 +128,7 @@ export default function ResearchCard({ paper }: Props) {
           href={paper.link}
           target="_blank"
           className="
-            text-blue-600 font-medium text-sm
+            text-[#1375C1] font-medium text-sm
             hover:underline
             whitespace-nowrap
           "

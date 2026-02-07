@@ -18,9 +18,11 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-6 items-center">
         {/* LEFT CONTENT */}
         <div>
-          <p className="text-sm tracking-widest uppercase text-[#1375C1] mb-3">
+          {/* <p className="text-sm tracking-widest uppercase text-[#1375C1] mb-3"> */}
+          <h2 className="text-3xl font-bold mb-12 text-[#1375C1]">
             About
-          </p>
+          </h2>
+    
 
           {/* ✅ CHANGED: Word-by-word reveal */}
           <motion.p

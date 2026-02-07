@@ -39,14 +39,14 @@ export default function Gallery() {
       ref={ref}
       id="gallery"
       className="
-        py-28
+        py-30 mb-40
         overflow-hidden
         bg-[radial-gradient(#e5e7eb_1px,transparent_1px)]
-        [background-size:22px_22px]
+       
       "
     >
       {/* HEADING */}
-      <h2 className="text-4xl font-bold text-center mb-20">
+      <h2 className="text-4xl font-bold text-center mb-20 text-[#1375C1]">
         Gallery
       </h2>
 
@@ -75,7 +75,7 @@ export default function Gallery() {
                 rounded-3xl
                 overflow-hidden
                 shadow-lg
-                border border-white/40
+                border border-blue-300 hover:border-[#1375C1]/40
                 bg-white/30
                 transition-transform duration-500
                 hover:scale-105 hover:rotate-0

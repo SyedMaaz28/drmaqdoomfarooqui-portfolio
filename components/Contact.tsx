@@ -1,5 +1,7 @@
 "use client"
 
+import VisitorCounter from "@/components/VisitorCounter";
+
 export default function Contact() {
   return (
     <section
@@ -8,7 +10,8 @@ export default function Contact() {
         bg-[#2F6EA5]
         text-white
         px-6 md:px-16 lg:px-24
-        py-28
+        py-20
+        mt-20
       "
     >
       <div className="max-w-7xl mx-auto">
@@ -118,6 +121,8 @@ export default function Contact() {
           </p>
 
           <p>Updated 2026</p>
+          <VisitorCounter />
+
         </div>
       </div>
     </section>

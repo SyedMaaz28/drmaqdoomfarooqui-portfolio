@@ -43,11 +43,11 @@ export default function Research() {
         py-24
         px-6 md:px-16 lg:px-24
         bg-[radial-gradient(#e5e7eb_1px,transparent_1px)]
-        [background-size:22px_22px]
+
       "
     >
       {/* HEADING */}
-      <h2 className="text-4xl font-bold text-center mb-12">
+      <h2 className="text-3xl font-bold text-center mb-12 text-[#1375C1]">
         Research & Publications
       </h2>
 
@@ -64,7 +64,7 @@ export default function Research() {
 
               ${
                 selectedTags.includes(tag)
-                  ? "bg-blue-600 text-white shadow-md scale-105"
+                  ? "bg-[#1375C1] text-white shadow-md scale-105"
                   : "bg-white text-gray-700 hover:bg-gray-100"
               }
             `}
@@ -122,7 +122,7 @@ export default function Research() {
           href="https://scholar.google.com/citations?user=wOraNEMAAAAJ&hl=en"
           target="_blank"
           className="
-            text-blue-600 font-medium
+            text-[#1375C1] font-medium
             hover:underline
           "
         >
