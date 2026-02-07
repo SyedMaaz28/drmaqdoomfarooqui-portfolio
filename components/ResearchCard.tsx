@@ -46,28 +46,28 @@ export default function ResearchCard({ paper }: Props) {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-
       whileHover={{
-        y: -6,            // reduced movement
-        scale: 1.01,     // lighter scale
+        y: -6,
+        scale: 1.01,
       }}
-
       className="
-  h-[260px]
-  flex flex-col justify-between
-  rounded-2xl
+        flex flex-col justify-between
+        rounded-2xl
 
-  bg-white/90
-  shadow-md shadow-black/5
+        /* HEIGHT FIX */
+        min-h-[260px]
+        md:h-[260px]
 
-  p-7
-  hover:shadow-xl
-  hover:-translate-y-1
-  transition-all duration-300
-"
+        bg-white/90
+        shadow-md shadow-black/5
 
+        p-6 md:p-7
+        hover:shadow-xl
+        hover:-translate-y-1
+        transition-all duration-300
+      "
     >
-      {/* TOP */}
+      {/* ───────── TOP ───────── */}
       <div>
         {/* TAGS */}
         <div className="flex flex-wrap gap-2">
@@ -76,6 +76,7 @@ export default function ResearchCard({ paper }: Props) {
               key={i}
               className={`
                 text-xs px-3 py-1 rounded-full font-medium
+                whitespace-nowrap
                 ${tagColors[tag] || "bg-gray-100 text-gray-700"}
               `}
             >
@@ -100,16 +101,35 @@ export default function ResearchCard({ paper }: Props) {
         </p>
       </div>
 
-      {/* FOOTER */}
-      <div className="flex items-center justify-between mt-4">
-        <span className="text-sm font-medium  text-amber-700 px-4 py-1.5 rounded-full">
+      {/* ───────── FOOTER ───────── */}
+      <div
+        className="
+          flex items-center justify-between
+          mt-6
+          flex-wrap gap-3
+        "
+      >
+        {/* CITATIONS */}
+        <span
+          className="
+            text-sm font-medium
+            bg-amber-100 text-amber-700
+            px-4 py-1.5 rounded-full
+            whitespace-nowrap
+          "
+        >
           ⭐ {paper.citations} citations
         </span>
 
+        {/* LINK */}
         <a
           href={paper.link}
           target="_blank"
-          className="text-blue-600 font-medium text-sm hover:underline"
+          className="
+            text-blue-600 font-medium text-sm
+            hover:underline
+            whitespace-nowrap
+          "
         >
           View Paper →
         </a>
