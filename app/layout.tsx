@@ -1,12 +1,17 @@
 import "./globals.css";
-import { Playfair_Display, Inter } from "next/font/google";
+import {
+  Playfair_Display,
+  Inter,
+} from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export default function RootLayout({
@@ -16,7 +21,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        {/* Arabic Quran Font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Amiri&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+
+      <body
+        className={`
+          ${inter.variable}
+          ${playfair.variable}
+          font-sans
+          antialiased
+        `}
+      >
         {children}
       </body>
     </html>
