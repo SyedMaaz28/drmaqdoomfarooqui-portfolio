@@ -22,6 +22,9 @@ export default function Home() {
       <section id="media" className="h-screen"><Gallery/></section>
       <section id="contact" className="h-screen"><Contact/></section>
       
+
+
+      
     </main>
   );
 }
