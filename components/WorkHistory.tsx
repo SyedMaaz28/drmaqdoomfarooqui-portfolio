@@ -2,6 +2,9 @@
 
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
+import Sparkle from "@/components/Sparkle";
+
+
 
 const items = [
   {
@@ -76,6 +79,35 @@ export default function WorkHistory() {
       </h2>
 
       <div className="relative">
+                  {/* ✨ Floating Sparkles */}
+          {/* ✅ CHANGED: Sparkles responsive for mobile */}
+
+<Sparkle
+  className="
+    absolute top-0 left-2
+    md:-top-5 md:-left-10
+    w-6 h-6 md:w-10 md:h-10
+    text-yellow-400
+  "
+/>
+
+<Sparkle
+  className="
+    absolute top-2 right-2
+    md:top-10 md:-right-8
+    w-5 h-5 md:w-6 md:h-6
+    text-blue-400
+  "
+/>
+
+<Sparkle
+  className="
+    absolute bottom-2 left-4
+    md:bottom-10 md:-left-10
+    w-4 h-4 md:w-5 md:h-5
+    text-yellow-400
+  "
+/>
         {/* ✅ ONE CENTER LINE (desktop + mobile) */}
         <motion.div
           style={{ scaleY }}

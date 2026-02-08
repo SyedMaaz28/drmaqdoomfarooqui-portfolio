@@ -276,7 +276,7 @@ export default function Navbar() {
               </div>
 
               <p className="mt-10 text-sm text-gray-400">
-                Dr. Maqdoom Farooqui Portfolio
+                Dr. Maqdoom Farooqui
               </p>
             </motion.div>
           </>

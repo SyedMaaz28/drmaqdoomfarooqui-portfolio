@@ -1,4 +1,5 @@
 "use client"
+import Sparkle from "@/components/Sparkle";
 
 import { motion } from "framer-motion"
 
@@ -39,23 +40,54 @@ export default function QuranSection() {
         px-6 md:px-16 lg:px-24
         overflow-hidden
         bg-gradient-to-b
-        from-white
-        via-blue-50/40
-        to-white
+        from-transparent
+        via-blue-50/30
+        to-transparent
+        backdrop-blur-[1px]
       "
     >
+
       {/* HEADING */}
       <h2 className="text-3xl font-bold text-center mb-12 text-[#1375C1]">
         Quranic Teachings
       </h2>
+                      {/* ✨ Floating Sparkles */}
+          {/* ✅ CHANGED: Sparkles responsive for mobile */}
+
+<Sparkle
+  className="
+    absolute top-0 left-2
+    md:-top-5 md:-left-10
+    w-6 h-6 md:w-10 md:h-10
+    text-yellow-400
+  "
+/>
+
+<Sparkle
+  className="
+    absolute top-6 right-2
+    md:top-10 md:-right-8
+    w-5 h-5 md:w-6 md:h-6
+    text-blue-400
+  "
+/>
+
+<Sparkle
+  className="
+    absolute bottom-4 left-4
+    md:bottom-10 md:-left-10
+    w-4 h-4 md:w-5 md:h-5
+    text-yellow-400
+  "
+/>
       {/* BACKGROUND PATTERN */}
-      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:22px_22px]" />
+      {/* <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:22px_22px]" /> */}
 
       <div className="relative max-w-6xl mx-auto text-center">
 
         {/* ───────── AYAH ───────── */}
         <motion.h2
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
           viewport={{ once: true }}

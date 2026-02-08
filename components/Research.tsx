@@ -4,6 +4,9 @@ import { useState, useMemo } from "react"
 import { papers } from "@/lib/researchData"
 import ResearchCard from "./ResearchCard"
 import { motion } from "framer-motion"
+import Sparkle from "@/components/Sparkle";
+
+
 
 export default function Research() {
   /* ───────── TAG STATE ───────── */
@@ -50,7 +53,7 @@ export default function Research() {
       <h2 className="text-3xl font-bold text-center mb-12 text-[#1375C1]">
         Research & Publications
       </h2>
-
+      
       {/* ───────── TAG FILTER ───────── */}
       <div className="flex flex-wrap gap-3 justify-center mb-16">
         {allTags.map((tag) => (
@@ -114,6 +117,7 @@ export default function Research() {
           )
         )}
       </motion.div>
+      
 
       {/* ───────── SCHOLAR LINK ───────── */}
       <div className="text-center mt-16">
