@@ -115,7 +115,7 @@ export default function ResearchCard({ paper }: Props) {
         <span
           className="
             text-sm font-medium
-            bg-amber-100 text-amber-700
+            text-amber-700
             px-4 py-1.5 rounded-full
             whitespace-nowrap
           "
