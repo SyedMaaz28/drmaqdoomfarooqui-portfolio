@@ -8,12 +8,14 @@ import Contact from "@/components/Contact"
 import QuranSection from "@/components/QuranSection";
 import Achievements from "@/components/Achievements";
 
+import SignatureReveal from "@/components/SignatureReveal";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
+      {/* <SignatureReveal /> */}
       <About />
       <Achievements />
       <WorkHistory />

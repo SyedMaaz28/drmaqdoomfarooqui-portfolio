@@ -5,6 +5,7 @@ import { Playfair_Display } from "next/font/google";
 import Sparkle from "@/components/Sparkle";
 
 
+
 const playfair = Playfair_Display({
   subsets: ["latin"],
 });

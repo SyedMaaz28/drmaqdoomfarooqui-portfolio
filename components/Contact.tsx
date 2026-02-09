@@ -117,7 +117,7 @@ export default function Contact() {
         >
           <p>
             Designed & Developed with ❤️ for
-            Dr. Maqdoom Farooqui Portfolio
+            Dr. Maqdoom Farooqui
           </p>
 
           <p>Updated 2026</p>
